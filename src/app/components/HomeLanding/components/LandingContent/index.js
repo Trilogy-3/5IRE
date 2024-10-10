@@ -1,6 +1,7 @@
 import HeaderText from '../HeaderText';
 import { RiFileSettingsFill as Document } from 'react-icons/ri';
 import Link from 'next/link';
+import Button5ire from '@/app/atoms/Button5ire';
 
 export default function LandingContent() {
   const buttonStyles = 'text-nowrap max-w-max px-4 py-3 rounded-xl shadow-sm text-sm sm:text-lg';
@@ -8,13 +9,8 @@ export default function LandingContent() {
   return (
     <div className="relative md:absolute md:inset-0 flex flex-col justify-center h-full w-full">
       <div className="lg:pl-36 flex flex-col gap-6 w-full px-4 items-center justify-center sm:items-start md:mt-32">
-        <Link
-          href="https://x.com/5ireChain/status/1824126062189744641"
-          className="border border-[#57CC55] text-[#57CC55] px-4 py-1 rounded-2xl -mt-4"
-        >
-          $5IRE is now on mainnet!
-        </Link>
-        
+         
+        <Button5ire href={'https://x.com/5ireChain/status/1824126062189744641'} value={'$5IRE is now on mainnet!'} cssMain={'border border-[#57CC55] text-[#57CC55] -mt-4'} />
         <h1 className="font-semibold text-3xl sm:text-6xl capitalize">Blockchain</h1>
         <div className="flex flex-col md:flex-row gap-1 md:gap-2 items-center text-3xl md:text-5xl">
           <span className="text-blue-600">Meets</span>
