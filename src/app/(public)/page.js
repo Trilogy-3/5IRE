@@ -6,6 +6,7 @@ import Child1 from "../components/Parent/Child1";
 import Child2 from "../components/Parent/Child2";
 import Child3 from "../components/Parent/Child3";
 import Child4 from "../components/Parent/Child4";
+import ArrowCaurosel from "../components/ArrowCaurosel";
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
          <Child1/>
          <Child2 />
         <Child3 />
-        <Child4/>
+        <Child4 />
+        <ArrowCaurosel/>
 
        
       </Container>

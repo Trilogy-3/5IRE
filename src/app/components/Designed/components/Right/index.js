@@ -1,4 +1,5 @@
 import Button5ire from '@/app/atoms/Button5ire';
+import Paragraph from '@/app/atoms/Paragraph';
 import Title from '@/app/atoms/Title';
 
 export default function Right({
@@ -23,7 +24,7 @@ export default function Right({
         href={href} 
       />
       <Title title={title} />
-      <p className="text-slate-600">{desc}</p>
+      <Paragraph desc={desc}/>
       {isPercent && (
         <div className="mt-3">
           <p className= {`text-2xl  ${btnColor} `} >{percentValue} {sibling}</p>
