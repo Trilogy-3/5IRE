@@ -12,7 +12,7 @@ export default function Aboutus() {
           className="lg:h-screen block h-full w-full object-contain "
 
         />
-        <div className='md:absolute md:top-36 lg:top-1/4 md:left-6  lg:left-48 lg:right-24 px-5 flex flex-col gap-20'>
+        <div className='md:absolute md:top-36 lg:top-1/4 md:left-6  lg:left-40 lg:right-24 px-5 flex flex-col gap-20'>
           <AboutHeader />
           <MissionVision />
         </div>
