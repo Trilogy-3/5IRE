@@ -1,52 +1,53 @@
- const menuItems = [
+const menuItems = [
   {
-    name: "Home",
-    href: "/",
-    isChildren: false
+    name: 'Home',
+    href: '/',
+    isChildren: false,
   },
   {
-    name: "Developers",
+    name: 'Developers',
     children: [
-      { name: "Documentation", href: '',isOtherPage:true},
-      { name: "Grant Program", href: '',isOtherPage:false },
-      { name: "Build", href: '', isOtherPage:false}
+      { name: 'Documentation', href: '', isOtherPage: true },
+      { name: 'Grant Program', href: '', isOtherPage: false },
+      { name: 'Build', href: '', isOtherPage: false },
     ],
-    isChildren: true
+    isChildren: true,
   },
   {
-    name: "Networks",
+    name: 'Networks',
     children: [
-      { name: "Validator App", href: '',isOtherPage:true },
-      { name: "Nominator App", href: '',isOtherPage:true },
-      { name: "5ire Explorer", href: '',isOtherPage:true },
-      { name: "5ire Staking", href: '' ,isOtherPage:true}
+      { name: 'Validator App', href: '', isOtherPage: true },
+      { name: 'Nominator App', href: '', isOtherPage: true },
+      { name: '5ire Explorer', href: '', isOtherPage: true },
+      { name: '5ire Staking', href: '', isOtherPage: true },
     ],
-    isChildren: true
+    isChildren: true,
   },
   {
-    name: "Community",
-      children: [
-      { name: "Community", href: '' ,isOtherPage:false},
-      { name: "Partner With Us", href: '',isOtherPage:true },
-      { name: "Blog", href: '' ,isOtherPage:false},
-      { name: "News & Events", href: '' ,isOtherPage:false}
-    ],
-    isChildren: true
-  },
-  {
-    name: "Ecosystem",
-    href: "",
-    
-    isChildren: false
-  },
-  {
-    name: "About",
+    name: 'Community',
     children: [
-      { name: "About Us", href: '',isOtherPage:false },
-      { name: "Contact", href: '',isOtherPage:false}
+      { name: 'Community', href: '', isOtherPage: false },
+      { name: 'Partner With Us', href: '', isOtherPage: true },
+      { name: 'Blog', href: '', isOtherPage: false },
+      { name: 'News & Events', href: '', isOtherPage: false },
     ],
-    isChildren: true
-  }
-];
+    isChildren: true,
+  },
+  {
+    name: 'Ecosystem',
+    href: '',
+
+    isChildren: false,
+  },
+  {
+    name: 'About',
+    children: [
+      { name: 'About Us', href: '/about-us', isOtherPage: false },
+      { name: 'Contact', href: '/contact', isOtherPage: false },
+    ],
+    isChildren: true,
+  },
+]
 
 export default menuItems
+
