@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function NextSteps() {
   const steps = [
     {
@@ -37,7 +39,7 @@ export default function NextSteps() {
           {steps.map((item, index) => (
             <div
               key={index}
-              className='bg-mainBackground p-6 rounded-2xl shadow-lg border-2 border-gray-900 hover:bg-blue-900  transition duration-200'
+              className='bg-mainBackground p-6 rounded-2xl shadow-lg border-2 border-gray-900 hover:bg-slate-900 transition duration-200'
             >
               <div className='text-4xl text-blue-400 mb-4'>{item.icon}</div>
               <h3 className='text-xl font-bold text-white mb-4'>
@@ -46,12 +48,12 @@ export default function NextSteps() {
               <p className='text-gray-500 mb-6 lg:max-w-96'>
                 {item.description}
               </p>
-              <a
+              <Link
                 href={item.link}
-                className='inline-block p-3 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition duration-200'
+                className='inline-block p-3 bg-boxColor text-white rounded-lg hover:bg-blue-400  transition duration-200'
               >
                 {item.buttonText} <span aria-hidden='true'>↗️</span>
-              </a>
+              </Link>
             </div>
           ))}
         </div>

@@ -2,7 +2,8 @@
 import { FaTelegramPlane } from 'react-icons/fa'
 import { useState } from 'react'
 import NextSteps from '@/app/components/NextSteps'
-
+import { FaLongArrowAltRight as Right } from 'react-icons/fa'
+import Link from 'next/link'
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -26,7 +27,7 @@ export default function Contact() {
 
   return (
     <>
-      <div className='min-h-screen flex flex-col items-center gap-12 h-auto justify-center'>
+      <div className='min-h-screen flex flex-col items-center gap-12 h-auto justify-center my-20'>
         <h2 className='text-4xl text-white text-center'>Contact Us</h2>
         <div className='sm:p-8 p-2 rounded-3xl shadow-lg w-full max-w-7xl border-gray-900 border-2'>
           <section className='flex justify-center sm:gap-6 gap-2 mb-6 mt-8'>
@@ -47,7 +48,7 @@ export default function Contact() {
                   placeholder='Name'
                   value={formData.name}
                   onChange={handleChange}
-                  className='w-full p-3 rounded-2xl border-blue-500 border-2 bg-mainBackground'
+                  className='w-full p-3 rounded-2xl border-sky-400 border-2 bg-mainBackground'
                 />
                 <input
                   type='email'
@@ -55,7 +56,7 @@ export default function Contact() {
                   placeholder='E-Mail'
                   value={formData.email}
                   onChange={handleChange}
-                  className='w-full p-3 rounded-2xl border-blue-500 border-2 bg-mainBackground '
+                  className='w-full p-3 rounded-2xl border-sky-400 border-2 bg-mainBackground '
                 />
               </div>
               <input
@@ -64,29 +65,29 @@ export default function Contact() {
                 placeholder='Subject'
                 value={formData.subject}
                 onChange={handleChange}
-                className='w-full p-3 rounded-2xl border-blue-500 border-2 bg-mainBackground'
+                className='w-full p-3 rounded-2xl border-sky-400 border-2 bg-mainBackground'
               />
               <textarea
                 name='message'
                 placeholder='Message'
                 value={formData.message}
                 onChange={handleChange}
-                className='w-full p-3 rounded-2xl border-blue-500 border-2 bg-mainBackground h-32'
+                className='w-full p-3 rounded-2xl border-sky-400 border-2 bg-mainBackground h-32'
               />
               <section className='flex justify-between w-full'>
                 <p className='text-center text-gray-500 mt-4'>
-                  <a
+                  <Link
                     href='mailto:contact@5ire.org'
-                    className='hover:text-blue-400 transition duration-200'
+                    className='hover:bg-blue-400 p-2 bg-boxColor rounded-lg px-4 transition duration-200'
                   >
                     contact@5ire.org
-                  </a>
+                  </Link>
                 </p>
                 <button
                   type='submit'
-                  className='w-24 p-3 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-400 transition duration-200'
+                  className='flex items-center gap-2 w-24 p-3 bg-purple-800 text-white font-bold rounded-md hover:bg-blue-400 transition duration-200'
                 >
-                  Send
+                  Send <Right />
                 </button>
               </section>
             </form>
